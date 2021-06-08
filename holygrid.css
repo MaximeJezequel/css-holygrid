@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+}
+
+header, footer{
+    height:50vh;
+    width:100%;
+    grid-column: 1 / 4 ;
+    background-color:blue;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:
+        1fr
+        min(100ch, 100%)
+        1fr;
+}
+
+.nav, .content, .ads{
+    height:50vh;
+    background-color:yellowgreen;
+}
+
+.nav{
+    height:50vh;
+    background-color:orange;
+}
+.content{
+    height:50vh;
+    background-color:red;
+}
+.ads{
+    height:50vh;
+    background-color:yellow;
+}
